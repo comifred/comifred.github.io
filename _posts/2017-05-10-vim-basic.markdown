@@ -1,0 +1,97 @@
+---
+layout: post
+title:  "Basic commands of Vim"
+date:   2017-05-10 10:45:12 -0700
+categories: vim basic
+---
+
+It's usually to heard from fresh vim users that, "I'd like to know some basic commands to start, don't let me lost in the massive and complex plugins."  
+Here we'll list some common commands used by vim users.  
+  
+| keyboard   | comment                         |
+| ---------- | ------------------------------: |
+|            |                                 |
+| **cursor moving** |                          |
+| h          | left                            |
+| j          | down                            |
+| k          | up                              |
+| l          | right                           |
+| f+(char)   | forward to first (char)         |
+| F+(char)   | backward to first (char)        |
+| w          | forward to next word head       |
+| e          | forward to next word tail       |
+| b          | backward to previous word       |
+| (num)+gg/G | move to line (num)              |
+| gg         | to top of file                  |
+| G          | to bottom of file               |
+| 0          | to head of line                 |
+| ^          | to head of line (exclude blank) |
+| $          | to tail of line                 |
+| Ctrl+b     | page up                         |
+| Ctrl+f     | page down                       |
+| Ctrl+u     | half page up                    |
+| Ctrl+d     | half page down                  |
+|            |                          |
+| **select** |                          |
+|v          | select text               |
+|V          | select text by line       |
+|Ctrl+v     | select rectangle          |
+|                |                                  |
+| **insert/edit* |                                  |
+|i          | insert before current cursor          |
+|I          | insert at the head of line            |
+|a          | insert after current cursor           |
+|A          | insert at the tail of line            |
+|o          | insert beneath current line           |
+|O          | insert above current line             |
+|r          | edit current cursor                   |
+|R          | edit until Esc                        |
+|cw/caw     | delete whole word and insert          |
+|cf+(char)  | delete to (char) and insert           |
+|c$         | delete to the tail of line and insert |
+|cc         | delete whole line and insert          |
+|                |                                  |
+| **delete/paste** |                                |
+|x          | delete current cursor                 |
+|df+(char)  | delete to (char)                      |
+|dw/daw     | delete whole word                     |
+|d$         | delete to the tail of line            |
+|dd         | delete current line                   |
+|p          | paste (del,copy) after current cursor |
+|P          | paste (del,copy) before current cursor|
+|           |                           |
+| **copy**  |                           |
+|yw         | copy to the end of word   |
+|yf+(char)  | copy to the next (char)   |
+|y$         | copy to the end of line   |
+|yy         | copy whole line           |
+|           |                           |
+| **undo/redo** |                       |
+|u          | undo                      |
+|Ctrl+r     | redo                      |
+|           |                           |
+| **repeat** |                          |
+|(num)+(act)| repeat (act) (num) times  |
+|.          | repeat previous action    |
+|           |                                        |
+| **search** |                                       |
+|/(pattern) | search (pattern) in current file       |
+|*          | search next word of current cursor     |
+|#          | search previous word of current cursor |
+|           |                                 |
+| **save and quit** |                         |
+|:w             | save current file           |
+|:q             | exit from current file      |
+|:q!            | exit without save           |
+|:qa            | exit from all files         |
+|:x             | save and quit               |
+|ZZ             | save and quit               |
+|:saveas (path) | save to another file (path) |
+|                  |                                                                      |
+| **multi files**  |                                                                      |
+|:split            | horizontal split screen with same file in new subscreen              |
+|:vsplit           | vertical split screen with same file in new subscreen                |
+|:split (file)     | horizontal split screen with (file) in new subscreen                 |
+|:vsplit (file)    | vertical split screen with (file) in new subscreen                   |
+|Ctrl+w+(h j k l)  | switch to other subscreen with direction (left,up,down,right)        |
+  
